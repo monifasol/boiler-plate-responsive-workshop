@@ -1,0 +1,60 @@
+:root {
+  --main-bg-color: #eaeaea;
+}
+
+body {
+  color: #333333;
+  font-family: "Roboto Mono", monospace;
+  line-height: 30px;
+  text-align: center;
+  background-color: var(--main-bg-color);
+}
+
+main {
+  margin: 100px auto;
+  width: 90vw;            /* takes 90% of the viewport */
+  display: block;
+}
+
+h1.awesome_title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+}
+
+.awesome_text {
+  font-size: 18px;
+  margin: 30px auto;
+}
+
+.awesome_images {
+  width: 100%;        /* takes 100% of its parent container (main) */
+}
+
+.awesome_images img {
+  width: 90%;         /* takes 90% of its parent container (awesome_images) */
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ====== content for screens that have minimum 700 pixels width ======= */
+
+@media all and (min-width: 700px) {
+  .awesome_images img {
+    float: left;
+    margin: 10px;
+    width: 46%;
+  }
+}
+
+/* ====== content for screens that have minimum 960 pixels width ======= */
+
+@media all and (min-width: 960px) {
+  main {
+    width: 70vw;
+  }
+  .awesome_text {
+    margin: 60px auto;
+  }
+}
