@@ -12,4 +12,3 @@ Clone or download the project from Github.
 ## Developer
 
 Monica Saiz
-<br/>http://www.monica-saiz.com
