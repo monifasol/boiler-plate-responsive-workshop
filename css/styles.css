@@ -1,7 +1,57 @@
+:root {
+  --main-bg-color: #f8f8f8;
+}
+
 body {
   color: #333333;
   font-family: "Roboto Mono", monospace;
   line-height: 30px;
   text-align: center;
   background-color: var(--main-bg-color);
+}
+
+main {
+  width: 90vw;
+  margin: 50px auto;
+}
+
+h1.awesome-title {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.awesome-text {
+  font-size: 18px;
+  margin: 30px auto;
+}
+
+.awesome-images img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/*  This is the styles for screns that have minimum 700 px */
+
+@media all and (min-width: 700px) {
+  .awesome-images img {
+    width: 46%;
+  }
+}
+
+@media all and (min-width: 960px) {
+  main {
+    margin-top: 100px;
+    width: 60vw;
+  }
+
+  h1.awesome-title {
+    font-size: 40px;
+  }
+
+  .awesome-text {
+    font-size: 24px;
+    margin: 70px auto;
+  }
+
 }
